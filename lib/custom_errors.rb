@@ -11,12 +11,11 @@ class Person
       raise PartnerError
     else
     person.partner = self
+    end
   end
-
+  
   class PartnerError < StandardError
   end
-end
-
 end
 
 beyonce = Person.new("Beyonce")
